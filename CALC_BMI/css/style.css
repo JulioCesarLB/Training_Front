@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     margin: 0;
 }
@@ -15,6 +17,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    
 
 }
 
@@ -28,7 +32,7 @@
 }
 
 header {
-    margin-bottom: 4%;
+    margin-bottom: 2%;
     margin-top: 3%;
     margin-left: 3%;
 }
@@ -37,15 +41,20 @@ header {
     width: 40%;
     margin-left: 4%;
 }
+label{
+    font-size: 3vh;
+    font-weight: bold;
+}
 
 input,
 select {
+    font-size: 2vh;
+    height: 4vh;
     width: 100%;
     border: none;
     border-bottom: 1px solid black;
     margin-bottom: 10%;
 }
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -58,20 +67,51 @@ input::-webkit-inner-spin-button {
 }
 
 .image {
-
     width: 20%;
     height: 50vh;
     margin-left: 3%;
 }
 
 .text {
-    width: 30%;
+    width: 28%;
     margin-left: 3%;
+    margin-top: 6%;
 }
 
 button {
-    width: 60%;
+    width: 65%;
     height: 15vh;
     margin-left: 3%;
     margin-top: 1%;
+    font-size: 5vh;
+    font-weight:bold ;
+    background-color:rgb(130, 88, 245);
+    color: #ffff;
+    border: none;
+}
+button:hover{
+    background-color:rgb(99, 64, 197);
+}
+button:active{
+    background-color:rgb(78, 47, 165);
+}
+.title-paragraph{
+    margin-bottom: 4%;
+    border-left: 2px solid black;
+    padding-left: 7px;
+    font-size: 20px;
+
+}
+.paragraph{
+    line-height: 6vh;
+    padding-left: 7px;
+}
+h1,h2,h3{
+    text-transform: uppercase;
+}
+.title-central{
+    font-size: 50px;
+}
+.title-information{
+
 }
