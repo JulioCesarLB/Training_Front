@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculate your BMI</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+    
 </head>
 
 <body>
@@ -16,26 +18,25 @@
                 <h1 class="title-central">Caculate your BMI</h1>
             </header>
 
-            <form class="form" action="">
+            <form class="form">
                 <div class="form-align">
-                    <img class="image" alt="human"
-                        src="images/male-silhouette-png-clip-art-5a3bf62bd3b246.0734705815138790838671-removebg-preview.png">
+                    <img class="image" alt="human" src="images/vector-woman-silhouette-700-154925823-removebg-preview.png">
 
                     <div class="form_content">
                         <label for="genre">Genre</label> <br>
-                        <select name="genre" value="feminine">
-                            <option value="feminine">Feminine</option>
+                        <select id="select" name="genre" onchange="func_genre()" >
+                            <option value="feminine" >Feminine</option>
                             <option value="masculine">Masculine</option>
                         </select><br>
 
                         <label for="age">Age</label><br>
-                        <input name="age" type="number" placeholder="40"><br>
+                        <input id="years" name="age" type="number" placeholder="40"><br>
 
                         <label for="height">Height</label><br>
-                        <input name="height" type="number" placeholder="170"><br>
+                        <input id="hei" name="height" type="number" placeholder="170"><br>
 
                         <label for="weight">Weight</label><br>
-                        <input name="weight" type="number" placeholder="70"><br>
+                        <input id="wei" name="weight" type="number" placeholder="70"><br>
                     </div>
                     <div class="text">
                         <h3 class="title-paragraph">Your health firts</h3>
@@ -45,14 +46,12 @@
                             the ideal weight of a person</p>
                     </div>
                 </div>
-
-                <button type="submit">CALCULATE</button>
             </form>
+            <button onclick="calc_BMI()">CALCULATE</button>
 
         </div>
 
     </div>
-
 
 </body>
 
