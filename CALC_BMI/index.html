@@ -13,42 +13,50 @@
 <body>
     <div class="background">
         <div class="principal">
-            <header>
-                <h2 class="title-information">Health and Wellness</h2>
-                <h1 class="title-central">Caculate your BMI</h1>
-            </header>
+            <div class="invisible" id="calculation">
+                <header>
+                    <h2 class="title-information">Health and Wellness</h2>
+                    <h1 class="title-central">Caculate your BMI</h1>
+                </header>
 
-            <form class="form">
-                <div class="form-align">
-                    <img class="image" alt="human" src="images/vector-woman-silhouette-700-154925823-removebg-preview.png">
+                <form class="form">
+                    <div class="form-align">
+                        <img class="image" alt="human" src="images/vector-woman-silhouette-700-154925823-removebg-preview.png">
 
-                    <div class="form_content">
-                        <label for="genre">Genre</label> <br>
-                        <select id="select" name="genre" onchange="func_genre()" >
-                            <option value="feminine" >Feminine</option>
-                            <option value="masculine">Masculine</option>
-                        </select><br>
+                        <div class="form_content">
+                            <label for="genre">Genre</label> <br>
+                            <select id="select" name="genre" onchange="func_genre()" >
+                                <option value="feminine" >Feminine</option>
+                                <option value="masculine">Masculine</option>
+                            </select><br>
 
-                        <label for="age">Age</label><br>
-                        <input id="years" name="age" type="number" placeholder="40"><br>
+                            <label for="age">Age</label><br>
+                            <input id="years" name="age" type="number" placeholder="40"><br>
 
-                        <label for="height">Height</label><br>
-                        <input id="hei" name="height" type="number" placeholder="170"><br>
+                            <label for="height">Height</label><br>
+                            <input id="hei" name="height" type="number" placeholder="170"><br>
 
-                        <label for="weight">Weight</label><br>
-                        <input id="wei" name="weight" type="number" placeholder="70"><br>
+                            <label for="weight">Weight</label><br>
+                            <input id="wei" name="weight" type="number" placeholder="70"><br>
+                        </div>
+                        <div class="text">
+                            <h3 class="title-paragraph">Your health firts</h3>
+                            <p class="paragraph">The calculation is done with the formula weight on height² and is the international
+                                measure to
+                                estimate
+                                the ideal weight of a person</p>
+                        </div>
                     </div>
-                    <div class="text">
-                        <h3 class="title-paragraph">Your health firts</h3>
-                        <p class="paragraph">The calculation is done with the formula weight on height² and is the international
-                            measure to
-                            estimate
-                            the ideal weight of a person</p>
-                    </div>
-                </div>
-            </form>
-            <button onclick="calc_BMI()">CALCULATE</button>
-
+                </form>
+                <button onclick="calc_BMI()">CALCULATE</button>
+            </div>
+            <div class="" id="result">
+                <h1>Result!!!</h1>
+                <p>Your BMI is: <b class="bmi"></b></p>
+                <p>For a <b class="result_age"></b> year old <b class="result_gen"></b> with <b class="result_wei"></b> kilos and <b class="result_hei"></b> height</p>
+                <p>You are <b  class="result_bmi"></b></p>
+                <button onclick="toggle()">BACK</button>
+            </div>
         </div>
 
     </div>

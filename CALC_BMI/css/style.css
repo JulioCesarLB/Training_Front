@@ -112,3 +112,7 @@ h1,h2,h3{
 .title-central{
     font-size: 50px;
 }
+.invisible{
+    display: none;
+
+}
