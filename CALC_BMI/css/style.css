@@ -116,3 +116,33 @@ h1,h2,h3{
     display: none;
 
 }
+#result{
+    width: 100%;
+ display:flexbox;
+
+}
+.title_result{
+    font-size: 50px;
+    margin: 5vh 19vw;
+    
+
+}
+.BMI_result{
+    font-size: 40px;
+    margin: 3vh 14vw;
+
+}
+.inf_result{
+    font-size: 30px;
+    margin: 3vh 5vw;
+    text-align: center;
+
+}
+.result_result{
+    font-size: 40px;
+    margin: 3vh 12vw;
+
+}
+.button_result{ 
+    margin: 6vh 9vw;
+}
